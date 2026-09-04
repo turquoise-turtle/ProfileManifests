@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>pfm_description</key>
+	<string>Jamf Self Service+ administrator controls</string>
+	<key>pfm_documentation_url</key>
+	<string>https://learn.jamf.com/r/en-US/self-service-plus-documentation/Self_Service_Plus_Settings_Reference</string>
+	<key>pfm_domain</key>
+	<string>group.com.jamf.selfserviceplus</string>
+	<key>pfm_format_version</key>
+	<integer>1</integer>
+	<key>pfm_last_modified</key>
+	<date>2026-09-04T00:00:00Z</date>
+	<key>pfm_platforms</key>
+	<array>
+		<string>macOS</string>
+	</array>
+	<key>pfm_subkeys</key>
+	<array>
+		<dict>
+			<key>pfm_default</key>
+			<string>Configures Jamf Self Service+ administrator controls</string>
+			<key>pfm_description</key>
+			<string>The human-readable description of this payload. This description appears on the Detail screen.</string>
+			<key>pfm_description_reference</key>
+			<string>Optional. A human-readable description of this payload. This description is shown on the Detail screen.</string>
+			<key>pfm_name</key>
+			<string>PayloadDescription</string>
+			<key>pfm_title</key>
+			<string>Payload Description</string>
+			<key>pfm_type</key>
+			<string>string</string>
+		</dict>
+		<dict>
+			<key>pfm_default</key>
+			<string>Jamf Self Service+</string>
+			<key>pfm_description</key>
+			<string>The human-readable name for the profile payload. The name appears on the Detail screen and doesn't need to be unique.</string>
+			<key>pfm_description_reference</key>
+			<string>A human-readable name for the profile payload. This name is displayed on the Detail screen. It does not have to be unique.</string>
+			<key>pfm_name</key>
+			<string>PayloadDisplayName</string>
+			<key>pfm_require</key>
+			<string>always</string>
+			<key>pfm_title</key>
+			<string>Payload Display Name</string>
+			<key>pfm_type</key>
+			<string>string</string>
+		</dict>
+		<dict>
+			<key>pfm_default</key>
+			<string>group.com.jamf.selfserviceplus</string>
+			<key>pfm_description</key>
+			<string>The reverse-DNS-style identifier for the payload. This identifier is usually the same as the 'TopLevel' value, with an additional appended component. This string must be unique within the profile.
+During a profile replacement, the system updates payloads with the same 'PayloadIdentifier' and 'PayloadUUID' in the old and new profiles.</string>
+			<key>pfm_description_reference</key>
+			<string>A reverse-DNS-style identifier for the specific payload. It is usually the same identifier as the root-level PayloadIdentifier value with an additional component appended.</string>
+			<key>pfm_name</key>
+			<string>PayloadIdentifier</string>
+			<key>pfm_require</key>
+			<string>always</string>
+			<key>pfm_title</key>
+			<string>Payload Identifier</string>
+			<key>pfm_type</key>
+			<string>string</string>
+		</dict>
+		<dict>
+			<key>pfm_default</key>
+			<string>group.com.jamf.selfserviceplus</string>
+			<key>pfm_description</key>
+			<string>The payload type.</string>
+			<key>pfm_description_reference</key>
+			<string>The payload type.</string>
+			<key>pfm_name</key>
+			<string>PayloadType</string>
+			<key>pfm_require</key>
+			<string>always</string>
+			<key>pfm_title</key>
+			<string>Payload Type</string>
+			<key>pfm_type</key>
+			<string>string</string>
+		</dict>
+		<dict>
+			<key>pfm_description</key>
+			<string>The globally unique identifier for the payload. The actual content is unimportant, but it must be globally unique.
+During a profile replacement, the system updates payloads with the same 'PayloadIdentifier' and 'PayloadUUID' in the old and new profiles.</string>
+			<key>pfm_description_reference</key>
+			<string>A globally unique identifier for the payload. The actual content is unimportant, but it must be globally unique.</string>
+			<key>pfm_format</key>
+			<string>^[0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}$</string>
+			<key>pfm_name</key>
+			<string>PayloadUUID</string>
+			<key>pfm_require</key>
+			<string>always</string>
+			<key>pfm_title</key>
+			<string>Payload UUID</string>
+			<key>pfm_type</key>
+			<string>string</string>
+		</dict>
+		<dict>
+			<key>pfm_default</key>
+			<integer>1</integer>
+			<key>pfm_description</key>
+			<string>The version of the entire configuration profile as a whole, not of the individual profiles within it. The value must be 1.</string>
+			<key>pfm_description_reference</key>
+			<string>The version of the entire configuration profile as a whole, not of the individual profiles within it. The value must be 1.</string>
+			<key>pfm_name</key>
+			<string>PayloadVersion</string>
+			<key>pfm_range_list</key>
+			<array>
+				<integer>1</integer>
+			</array>
+			<key>pfm_require</key>
+			<string>always</string>
+			<key>pfm_title</key>
+			<string>Payload Version</string>
+			<key>pfm_type</key>
+			<string>integer</string>
+		</dict>
+		<dict>
+			<key>pfm_description</key>
+			<string>The human-readable string containing the name of the organization that provided the profile.</string>
+			<key>pfm_description_reference</key>
+			<string>A human-readable string containing the name of the organization that provided the profile.</string>
+			<key>pfm_name</key>
+			<string>PayloadOrganization</string>
+			<key>pfm_title</key>
+			<string>Payload Organization</string>
+			<key>pfm_type</key>
+			<string>string</string>
+		</dict>
+		<dict>
+			<key>pfm_description</key>
+			<string>The blueprint that defines the administrator controls applied to Self Service+.</string>
+			<key>pfm_documentation_url</key>
+			<string>https://learn.jamf.com/r/en-US/self-service-plus-documentation/Self_Service_Plus_Settings_Reference</string>
+			<key>pfm_name</key>
+			<string>blueprint</string>
+			<key>pfm_subkeys</key>
+			<array>
+				<dict>
+					<key>pfm_description</key>
+					<string>Feature configuration for Self Service+.</string>
+					<key>pfm_name</key>
+					<string>configs</string>
+					<key>pfm_subkeys</key>
+					<array>
+						<dict>
+							<key>pfm_description</key>
+							<string>Account Management features and capabilities within Self Service+.</string>
+							<key>pfm_documentation_url</key>
+							<string>https://learn.jamf.com/r/en-US/self-service-plus-documentation/Self_Service_Plus_Account_Management_Settings</string>
+							<key>pfm_name</key>
+							<string>connect</string>
+							<key>pfm_subkeys</key>
+							<array>
+								<dict>
+									<key>pfm_default</key>
+									<false/>
+									<key>pfm_description</key>
+									<string>Controls if the Self Service+ menu bar icon is visible to users.</string>
+									<key>pfm_description_reference</key>
+									<string>Controls if the Self Service+ menu bar icon is visible to users.</string>
+									<key>pfm_documentation_url</key>
+									<string>https://learn.jamf.com/r/en-US/self-service-plus-documentation/Self_Service_Plus_Account_Management_Settings</string>
+									<key>pfm_name</key>
+									<string>HideMenubarIcon</string>
+									<key>pfm_range_list_titles</key>
+									<array>
+										<string>Show the menu bar icon</string>
+										<string>Hide the menu bar icon</string>
+									</array>
+									<key>pfm_title</key>
+									<string>Hide Menubar Icon</string>
+									<key>pfm_type</key>
+									<string>boolean</string>
+								</dict>
+							</array>
+							<key>pfm_title</key>
+							<string>Account Management</string>
+							<key>pfm_type</key>
+							<string>dictionary</string>
+						</dict>
+					</array>
+					<key>pfm_title</key>
+					<string>Configs</string>
+					<key>pfm_type</key>
+					<string>dictionary</string>
+				</dict>
+			</array>
+			<key>pfm_title</key>
+			<string>Blueprint</string>
+			<key>pfm_type</key>
+			<string>dictionary</string>
+		</dict>
+	</array>
+	<key>pfm_targets</key>
+	<array>
+		<string>system</string>
+		<string>user</string>
+	</array>
+	<key>pfm_title</key>
+	<string>Jamf Self Service+</string>
+	<key>pfm_unique</key>
+	<true/>
+	<key>pfm_version</key>
+	<integer>1</integer>
+</dict>
+</plist>
